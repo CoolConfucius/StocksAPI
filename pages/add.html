@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+    <h1>Add a stock</h1>
+
+    <p>{{ message }}</p>
+    <p>Search</p>
+    <input type="text" ng-model="stock" autofocus>
+    <button ng-click="lookup()">Search</button>
+    <p>Name/ Symbol</p>
+    <ul class ="list-unstyled">
+      <li ng-repeat="n in results">
+        <a>{{n.name}}/ {{n.symb}}<a>
+      </li>
+    </ul>
+    <span>Enter symbol here:</span>
+    <input type="text" ng-model="name">
+    <button ng-click="quickAdd()">Add</button>
+    <button ng-click="remove()">Remove</button>
+    <ol>     
+     <li ng-repeat="n in list track by $index">{{n}}</li>  
+    </ol>
+
+</div>

@@ -1,0 +1,8 @@
+<div class="jumbotron text-center">
+    <h1>Stocks</h1>
+
+    <p>{{ message }}</p>
+    <ol>     
+     <li ng-repeat="n in list track by $index">{{n.Name}}/{{n.Symbol}}: LastPrice: {{n.LastPrice}}.  Change: {{n.Change}}</li>  
+    </ol>
+</div>
